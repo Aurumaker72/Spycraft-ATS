@@ -31,6 +31,6 @@ pixFormat is set based on the `dwGBitMask` field of the `DDPIXELFORMAT` structur
 | 2 | Height |
 | 2 | Viewport X Origin
 | 2 | Viewport Y Origin
-| 2 | Skip color | Unused.
+| 2 | Skip color | TODO: Document. This is heavily used in the sprite drawing code and seems to be some kind of mask.
 | `rowBytes` is declared as the frame width, or double the width if 16-bit color depth is present. <br> Note that the variable checked against, `bpp` has been overwritten to be `8` by now if version is `2`.
 | `rowBytes` * Height | Video buffer
